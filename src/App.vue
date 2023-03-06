@@ -43,11 +43,11 @@ export default {
   <AppHeader @on-search="search" />
 
   <!-- Temporaneo stampa informazioni film ricevuti  IMPORTANTE: ricordare il v-if altrimenti appena aperta la app da errore
-    dato che la lista è ancora vuota  -->
-  <div v-if="store.filmSearchedList != ''" v-for="film in store.filmSearchedList">
-    <h1>{{ film.title }}</h1>
-    <p>{{ film.overview }}</p>
-  </div>
+          dato che la lista è ancora vuota  -->
+  <!-- <div v-if="store.filmSearchedList != ''" v-for="film in store.filmSearchedList">
+        <h1>{{ film.title }}</h1>
+        <p>{{ film.overview }}</p>
+      </div> -->
 
   <AppMain />
 </template>
