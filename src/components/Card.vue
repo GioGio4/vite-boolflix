@@ -19,7 +19,7 @@ export default {
     <div class="col-2 card-layout p-1">
         <div class="cards">
             <img class="poster-img" :src="'https://image.tmdb.org/t/p/w342' + pic" alt="">
-            <div class=" card-display">
+            <div class=" card-display overflow-auto">
                 <p>{{ title || seriestitle }}</p>
                 <p>{{ originalTitle || seriesOriginalTitle }}</p>
                 <p>{{ language }}</p>
@@ -45,7 +45,7 @@ export default {
 .cards {
     background-color: black;
     width: 100%;
-    height: 100%;
+    height: 350px;
 
     .card-display {
         color: white;
