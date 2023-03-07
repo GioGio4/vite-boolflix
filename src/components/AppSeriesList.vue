@@ -15,9 +15,10 @@ export default {
 
 <template>
     <!-- Layout provvisorio!! -->
-    <div class="d-flex">
-        <Card v-if="store.seriesSearchedList != ''" v-for="serietv in store.seriesSearchedList" :seriestitle="serietv.name"
-            :seriesOriginalTitle="serietv.original_name" :language="serietv.original_language"
+
+    <div class="row g-3">
+        <Card v-if="store.seriesSearchedList != ''" v-for="serietv in store.seriesSearchedList" :pic="serietv.poster_path"
+            :seriestitle="serietv.name" :seriesOriginalTitle="serietv.original_name" :language="serietv.original_language"
             :vote="serietv.vote_average" />
     </div>
 </template>

@@ -12,10 +12,12 @@ export default {
 
 <template>
     <!-- Layout temporaneo sezione film e sezione serie tv -->
-    <section class="film-list">
+    <section class="film-list container my-4">
+        <h2>Film</h2>
         <AppFilmList />
     </section>
-    <section class="series-list">
+    <section class="series-list container mb-5">
+        <h2>Series</h2>
         <AppSeriesList />
     </section>
 </template>
