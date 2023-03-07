@@ -40,8 +40,16 @@ export default {
 </script>
 
 <template>
-  <AppHeader @on-search="search" />
-  <AppMain />
+  <header>
+    <AppHeader @on-search="search" />
+  </header>
+  <main>
+    <AppMain />
+  </main>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+body {
+  background-color: #1b1b1b;
+}
+</style>

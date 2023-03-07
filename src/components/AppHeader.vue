@@ -22,16 +22,18 @@ export default {
 </script>
 
 <template>
-    <!-- Template provvisorio - barra di ricerca + bottone invio dati -->
-
-    <form @submit.prevent="">
-        <div class="input-group mb-3">
-            <input v-model="userSearch" type="text" class="form-control" placeholder="Cerca..." aria-label="Cerca..."
-                aria-describedby="button-addon2" @keyup.enter="search">
-            <button class="btn btn-outline-secondary" type="button" @click="search">Invia</button>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger fw-bold">BOOLFLIX</a>
+            <form @submit.prevent="">
+                <div class="input-group">
+                    <input v-model="userSearch" type="text" class="form-control" placeholder="Cerca..."
+                        aria-label="Cerca..." aria-describedby="button-addon2" @keyup.enter="search">
+                    <button class="btn btn-outline-secondary" type="button" @click="search">Cerca</button>
+                </div>
+            </form>
         </div>
-
-    </form>
+    </nav>
 </template>
 
 <style lang="scss"></style>
