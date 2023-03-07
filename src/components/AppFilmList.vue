@@ -17,7 +17,7 @@ export default {
     <div class="row g-3 card-box ">
         <Card v-if="store.filmSearchedList != ''" v-for="film in store.filmSearchedList" :pic="film.poster_path"
             :title="film.title" :originalTitle="film.original_title" :language="film.original_language"
-            :vote="film.vote_average" />
+            :vote="film.vote_average" :overview="film.overview" />
     </div>
 </template>
 

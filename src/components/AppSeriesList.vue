@@ -19,7 +19,7 @@ export default {
     <div class="row g-3">
         <Card v-if="store.seriesSearchedList != ''" v-for="serietv in store.seriesSearchedList" :pic="serietv.poster_path"
             :seriestitle="serietv.name" :seriesOriginalTitle="serietv.original_name" :language="serietv.original_language"
-            :vote="serietv.vote_average" />
+            :vote="serietv.vote_average" :overview="serietv.overview" />
     </div>
 </template>
 

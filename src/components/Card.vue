@@ -9,6 +9,7 @@ export default {
         seriesOriginalTitle: String,
         language: String,
         vote: Number,
+        overview: String,
     }
 }
 
@@ -28,6 +29,7 @@ export default {
                     <!-- Crea un ciclo e stampa le stelle mancanti sottraendo il n. di stelle piene a 5 -->
                     <img v-for="n in (5 - Math.ceil(vote / 2))" key="n" src="../assets/star-regular.svg" alt="iconStar">
                 </div>
+                <p><small>{{ overview }}</small></p>
             </div>
         </div>
     </div>
